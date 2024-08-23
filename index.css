@@ -1,0 +1,318 @@
+/* Navbar Styling */
+.navbar-custom {
+  background-color: #343a40;
+  /* Dark background color */
+  padding: 0.5rem 1rem;
+  /* Adjust padding */
+}
+
+.navbar-custom .navbar-brand img {
+  height: 50px;
+  /* Logo height */
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav-center {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navbar-nav-right {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #f8f9fa !important;
+  /* White text color */
+  padding: 0.5rem 1rem;
+  /* Adjust padding */
+  font-weight: 500;
+  /* Slightly bolder text */
+  transition: color 0.3s ease;
+  /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+  /* Highlight color on hover */
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+  /* Dark background for dropdown */
+  border: none;
+  /* Remove border */
+}
+
+.dropdown-item {
+  color: #f8f9fa;
+  /* White text color for dropdown items */
+}
+
+.dropdown-item:hover {
+  background-color: #495057;
+  /* Highlight background for dropdown items */
+  color: #ffc107;
+  /* Highlight text color */
+}
+
+/* Custom dropdown styling */
+.dropdown-menu-custom {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  /* Gradient background */
+  border: none;
+  /* Remove default border */
+  padding: 0;
+  /* Remove default padding */
+  min-width: 200px;
+  /* Set minimum width */
+  transition: opacity 0.3s ease;
+  /* Smooth transition for opacity */
+}
+
+/* Styling for dropdown items */
+.dropdown-item {
+  color: #ffffff;
+  /* White text color */
+  padding: 10px 15px;
+  /* Adjust padding */
+  font-size: 1rem;
+  /* Font size */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* Light separator line */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Smooth transition for background color */
+}
+
+/* Remove bottom border for last item */
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Light background color on hover */
+  color: #ffd700;
+  /* Highlight text color on hover */
+  border-radius: 0;
+  /* Remove border radius for hover effect */
+}
+
+/* Adjust position of dropdown items if needed */
+.dropdown-menu {
+  margin-top: 0.5rem;
+  /* Adjust position */
+}
+
+
+/* Custom footer styles */
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  /* White background with transparency */
+  backdrop-filter: blur(10px);
+  /* Glass screen effect with blur */
+  color: #ffffff;
+  /* White text color */
+  padding: 3rem 0;
+  /* Adjust padding for spacing */
+  width: 100%;
+  /* Ensure footer takes full width */
+  position: relative;
+  /* Ensure it stays in place */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Optional: add shadow for better contrast */
+}
+
+footer h5 {
+  color: #ffffff;
+  /* White color for section headers */
+  border-bottom: 2px solid #007bff;
+  /* Blue underline for section headers */
+  padding-bottom: 0.5rem;
+  /* Space between header and content */
+  margin-bottom: 1rem;
+  /* Space below header */
+}
+
+.nav-link {
+  color: #ffffff;
+  /* White color for links */
+  transition: color 0.3s ease;
+  /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #007bff;
+  /* Highlight color on hover */
+}
+
+form {
+  background-color: rgba(52, 58, 64, 0.7);
+  /* Slightly lighter background for form */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+form .form-control {
+  border-radius: 0.25rem;
+  /* Rounded corners for input */
+}
+
+.btn-primary {
+  border-radius: 0.25rem;
+  /* Rounded corners for button */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+  border-color: #0056b3;
+  /* Matching border color */
+}
+
+footer .text-muted {
+  color: #6c757d;
+  /* Muted text color */
+}
+
+footer .text-primary {
+  color: #007bff;
+  /* Primary color for highlights */
+}
+
+footer .text-light {
+  color: #e9ecef;
+  /* Light text color for descriptions */
+}
+
+.list-unstyled a {
+  color: #ffffff;
+  /* White color for social media links */
+}
+
+.list-unstyled a:hover {
+  color: #007bff;
+  /* Highlight color on hover */
+}
+
+/* gallery */
+
+/* *{
+    background-color: #f2a4a4;
+} */
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2a4a4;
+}
+
+.main-compo {
+  width: 75%;
+}
+
+.card1 {
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+
+}
+
+.card1-header {
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+.card1-body {
+  padding: 15px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+
+}
+
+
+.card1-image {
+  width: calc(33.333% - 10px);
+  /* 3 images per row, adjusting for gaps */
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card1-image:hover {
+  transform: scale(0.9);
+}
+
+
+.main-compo1 {
+  width: 60%;
+}
+
+.quot-compo {
+  width: 100%;
+  text-align: left;
+  /* Aligns the text to the left */
+}
+
+.quote {
+  flex: 1;
+  /* Quote takes up one part of the available space */
+  display: flex;
+  margin-right: 100px;
+  justify-content: flex-start;
+  /* Aligns the quote content to the left */
+  align-items: center;
+  padding: 20px;
+  /* width: 100%; */
+  /* background-color: #ffffff; */
+
+
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+blockquote {
+  font-size: 1.5em;
+  color: #333;
+  text-align: left;
+  /* Aligns the text within the blockquote to the left */
+  margin-right: 10px;
+  padding: 10px;
+  font-style: italic;
+
+
+}
+
+.quotet {
+  opacity: 0.5;
+  /* 50% opacity */
+}
+
+.transparent-bg {
+  background-color: rgba(255, 0, 0, 0.5);
+  /* Red background with 50% opacity */
+}
+
+/* review */

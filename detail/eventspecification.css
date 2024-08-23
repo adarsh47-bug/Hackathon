@@ -1,0 +1,355 @@
+/* styles.css */
+
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* General body and reset styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+.header {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.header-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent background */
+  color: #333;
+  /* Dark text color for contrast */
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+}
+
+.header-content p {
+  margin: 10px 0 0;
+  font-size: 1em;
+}
+
+/* Section general styles */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Event details styles */
+/* About Us Section */
+.about-us {
+  background-color: #f8f9fa;
+}
+
+.about-us p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Wedding Details Section */
+.wedding-details {
+  background-color: #f0f0f0;
+  padding: 50px;
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.detail-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.detail-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.detail-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.detail-card p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Glow and Hover Effects */
+.detail-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 105, 180, 0.5);
+}
+
+.detail-card:hover img {
+  transform: scale(1.05);
+}
+
+.detail-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 105, 180, 0.1);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.detail-card:hover:before {
+  opacity: 1;
+}
+
+
+/* Love Story & Proposal Section */
+.love-story,
+.proposal {
+  background-color: #f8f9fa;
+}
+
+.love-story p,
+.proposal p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Meet the Bridesmaids and Groomsmen Section */
+.bridal-party {
+  background-color: #f0f0f0;
+  padding: 50px;
+  text-align: center;
+}
+
+.party {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.party-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.party-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.party-card p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* Glow and Hover Effects */
+.party-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 105, 180, 0.5);
+}
+
+.party-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 105, 180, 0.1);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.party-card:hover:before {
+  opacity: 1;
+}
+
+
+/* Travel & Accommodation Section */
+.travel-accommodation {
+  background-color: #f8f9fa;
+}
+
+.travel-accommodation p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Registry Section */
+.registry {
+  background-color: #fff;
+}
+
+.registry p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.registry-button {
+  background-color: #ff6699;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+/* Image gallery styles */
+/* General gallery styles */
+.image-gallery {
+  background: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.image-gallery h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card styles */
+.card {
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Button styles */
+.card-content button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-content .view-more:hover {
+  background-color: #555;
+}
+
+.card-content .download:hover {
+  background-color: #555;
+}
+
+
+/* Footer styles */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1em;
+}

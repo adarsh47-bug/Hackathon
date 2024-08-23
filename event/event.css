@@ -11,7 +11,7 @@ header {
   text-align: center;
 }
 
-nav ul {
+/* nav ul {
   list-style: none;
   padding: 0;
 }
@@ -24,7 +24,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-}
+} */
 
 input[type="text"] {
   margin-top: 10px;
@@ -58,7 +58,7 @@ section {
   cursor: pointer;
 }
 
-footer {
+/* footer {
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -73,4 +73,38 @@ footer ul {
 footer ul li {
   display: inline;
   margin: 0 10px;
+} */
+
+
+/*  Global Cards */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  width: 27%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5%;
+}
+
+.card p {
+  padding: .5rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.642);
+}
+
+.card a {
+  text-align: center;
+  font-weight: 400;
+  padding: .5rem;
+}
+
+.cards-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
 }
