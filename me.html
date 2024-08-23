@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Reviews</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .star-rating input {
+            display: none;
+        }
+        .star-rating label {
+            font-size: 24px;
+            color: #ddd;
+            cursor: pointer;
+        }
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #f5c518;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+        body {
+            font-family: 'Raleway', sans-serif;
+            /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+            color: #333;
+            padding: 30px 0;
+        }
+
+        /* Card Container */
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Card Titles */
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .card-subtitle {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+
+        /* Star Rating System */
+        .star-rating {
+            margin-top: 10px;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 30px;
+            color: #e0e0e0;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1));
+        }
+
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #ffcc00;
+        }
+
+        /* Card Text */
+        .card-text {
+            margin-top: 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Background & Layout Enhancements */
+        .container {
+            max-width: 1200px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        /* Card Footer for Consistency */
+        .card-footer {
+            background-color: transparent;
+            border-top: none;
+            padding: 15px 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .card-title {
+                font-size: 1.25rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+   
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Event Reviews</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">John Doe</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Event: Summer Fest 2024</h6>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating1" value="5"><label for="star5" title="5 stars">&#9733;</label>
+                        <input type="radio" id="star4" name="rating1" value="4"><label for="star4" title="4 stars">&#9733;</label>
+                        <input type="radio" id="star3" name="rating1" value="3"><label for="star3" title="3 stars">&#9733;</label>
+                        <input type="radio" id="star2" name="rating1" value="2"><label for="star2" title="2 stars">&#9733;</label>
+                        <input type="radio" id="star1" name="rating1" value="1"><label for="star1" title="1 star">&#9733;</label>
+                    </div>
+                    <p class="card-text mt-3">Great event! Well organized and fun for everyone.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Event: Tech Expo 2024</h6>
+                    <div class="star-rating">
+                        <input type="radio" id="star10" name="rating2" value="5"><label for="star10" title="5 stars">&#9733;</label>
+                        <input type="radio" id="star9" name="rating2" value="4"><label for="star9" title="4 stars">&#9733;</label>
+                        <input type="radio" id="star8" name="rating2" value="3"><label for="star8" title="3 stars">&#9733;</label>
+                        <input type="radio" id="star7" name="rating2" value="2"><label for="star7" title="2 stars">&#9733;</label>
+                        <input type="radio" id="star6" name="rating2" value="1"><label for="star6" title="1 star">&#9733;</label>
+                    </div>
+                    <p class="card-text mt-3">Loved the exhibits and the networking opportunities.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Sam Wilson</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Event: Music Marathon 2024</h6>
+                    <div class="star-rating">
+                        <input type="radio" id="star15" name="rating3" value="5"><label for="star15" title="5 stars">&#9733;</label>
+                        <input type="radio" id="star14" name="rating3" value="4"><label for="star14" title="4 stars">&#9733;</label>
+                        <input type="radio" id="star13" name="rating3" value="3"><label for="star13" title="3 stars">&#9733;</label>
+                        <input type="radio" id="star12" name="rating3" value="2"><label for="star12" title="2 stars">&#9733;</label>
+                        <input type="radio" id="star11" name="rating3" value="1"><label for="star11" title="1 star">&#9733;</label>
+                    </div>
+                    <p class="card-text mt-3">Fantastic music lineup and great atmosphere!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

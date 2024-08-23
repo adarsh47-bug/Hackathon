@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calendar {
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.month h1 {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.weekdays div {
+    font-weight: bold;
+    color: #555;
+}
+
+.days .day {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.days .day:hover {
+    background-color: #e0e0e0;
+}
+
+.days .day.event {
+    background-color: #007bff;
+    color: white;
+}
+
+.days .day.empty {
+    background-color: transparent;
+    cursor: default;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .calendar {
+        padding: 15px;
+    }
+
+    .month h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .days .day {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar {
+        padding: 10px;
+    }
+
+    .month h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .weekdays div, .days .day {
+        font-size: 12px;
+    }
+
+    .days .day {
+        padding: 8px;
+    }
+}
