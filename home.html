@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-brand img {
+            height: 40px;
+        }
+        .navbar-nav {
+            flex-direction: row;
+        }
+        .navbar-nav-center {
+            flex-grow: 1;
+            justify-content: center;
+        }
+        .navbar-nav-right {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-center">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li> -->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-custom shadow-lg rounded-lg" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Direct Booking</a>
+                        <a class="dropdown-item" href="#">Budget Overview</a>
+                        <a class="dropdown-item" href="#">Location Tracking</a>  
+                        <a class="dropdown-item" href="#">Security</a> 
+                        <a class="dropdown-item" href="#">Send Invites</a> 
+                        <a class="dropdown-item" href="#">100% Assurance</a> 
+                        <a class="dropdown-item" href="#">Time-To-Time Update</a> 
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Events
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-custom shadow-lg rounded-lg" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Mode Of Event</a>
+                        <a class="dropdown-item" href="#">Type Of Events</a>
+                        <a class="dropdown-item" href="#">Top Events</a>  
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Footer Section of the project  -->
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <!-- Section 1: Quick Links -->
+                <div class="col-6 col-md-3 mb-3">
+                    <h5 class="text-primary">Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Services</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Events</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Portfolio</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 2: Services -->
+                <div class="col-6 col-md-3 mb-3">
+                    <h5 class="text-primary">Services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Direct Booking</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Budget Overview</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Location Tracking</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Send Invites</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">100% Assurance</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 3: Events -->
+                <div class="col-6 col-md-3 mb-3">
+                    <h5 class="text-primary">Events</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Social Event</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Entertainment Event</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Educational Event</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Cultural & Religious Event</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Governmental Event</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light">Sports Event</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 4: Newsletter Signup -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-primary">Subscribe to our Newsletter</h5>
+                    <p class="text-light">Stay updated with our latest news and offers.</p>
+                    <form>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter" class="visually-hidden">Email address</label>
+                            <input id="newsletter" type="email" class="form-control" placeholder="Email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-light">
+                <p style="text-decoration-color: rgb(140, 197, 27);" class="text-muted mb-0">© 2024 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex mb-0">
+                    <li class="ms-3"><a href="#" class="text-decoration-none text-light"><i class="fab fa-twitter">Twitter(X)</i></a></li>
+                    <li class="ms-3"><a href="#" class="text-decoration-none text-light"><i class="fab fa-instagram">Instagram</i></a></li>
+                    <li class="ms-3"><a href="#" class="text-decoration-none text-light"><i class="fab fa-facebook-f">Facebook</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
