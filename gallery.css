@@ -1,0 +1,102 @@
+/* *{
+    background-color: #f2a4a4;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2a4a4;
+}
+
+.main-compo{
+    width: 75%;
+}
+.card {
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px; 
+    
+}
+
+.card-header {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+   
+}
+
+
+.card-image {
+    width: calc(33.333% - 10px); /* 3 images per row, adjusting for gaps */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out; 
+} 
+
+.card-image:hover {
+    transform: scale(0.9);
+}
+
+
+.main-compo1{
+    width: 60%;
+}
+.quot-compo {
+    width: 100%;
+    text-align: left; /* Aligns the text to the left */
+}
+
+.quote {
+    flex: 1; /* Quote takes up one part of the available space */
+    display: flex;
+    margin-right: 100px;
+    justify-content: flex-start; /* Aligns the quote content to the left */
+    align-items: center; 
+    padding: 20px;
+    /* width: 100%; */
+    /* background-color: #ffffff; */
+    
+    
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+blockquote {
+    font-size: 1.5em;
+    color: #333;
+    text-align: left; /* Aligns the text within the blockquote to the left */
+    margin-right: 10px;
+    padding: 10px;
+    font-style: italic;
+    
+    
+}
+
+.quotet {
+    opacity: 0.5; /* 50% opacity */
+}
+
+.transparent-bg {
+    background-color: rgba(255, 0, 0, 0.5); /* Red background with 50% opacity */
+}
